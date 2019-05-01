@@ -11,16 +11,16 @@ function App() {
         <Layout>
             <Header transparent="true" title="Kevin Manning" scroll>
                 <Navigation>
+                    <Link to="/">Home</Link>
                     <Link to="/resume">Resume</Link>
-                    <Link to="/about">About</Link>
                     <Link to="/projects">Projects</Link>
                     <Link to="/contact">Contact</Link>
                 </Navigation>
             </Header>
             <Drawer title="Kevin Manning">
                 <Navigation>
+                  <Link to="/">Home</Link>
                   <Link to="/resume">Resume</Link>
-                  <Link to="/about">About</Link>
                   <Link to="/projects">Projects</Link>
                   <Link to="/contact">Contact</Link>
                 </Navigation>
