@@ -21,15 +21,57 @@ class Projects extends Component {
   toggleCategories() {
     if(this.state.activeTab === 0){
       return (
-        <div><h1>This is React</h1></div>
+        <div className="projects-grid">
+          <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+            <CardTitle style={{ color: '#fff', height: '176px', background: 'red' }}>React Project #1</CardTitle>
+            <CardText style={{ borderBottom: '1px solid #ccc' }}>
+              Lorem ipsum asdg asfg ik k;j ;la wr;lk ae;lrj
+            </CardText>
+            <CardActions>
+              <Button colored>Github</Button>
+              <Button colored>CodePen</Button>
+              <Button colored>Live Demo</Button>
+            </CardActions>
+            <CardMenu style={{ color: '#fff' }}>
+              <IconButton name='share' />
+            </CardMenu>
+          </Card>
+
+          <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+            <CardTitle style={{ color: '#fff', height: '176px', background: 'green' }}>React Project #2</CardTitle>
+            <CardText style={{ borderBottom: '1px solid #ccc' }}>
+              Lorem ipsum asdg asfg ik k;j ;la wr;lk ae;lrj
+            </CardText>
+            <CardActions>
+              <Button colored>Github</Button>
+              <Button colored>CodePen</Button>
+              <Button colored>Live Demo</Button>
+            </CardActions>
+            <CardMenu style={{ color: '#fff' }}>
+              <IconButton name='share' />
+            </CardMenu>
+          </Card>
+
+          <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+            <CardTitle style={{ color: '#fff', height: '176px', background: 'blue' }}>React Project #3</CardTitle>
+            <CardText style={{ borderBottom: '1px solid #ccc' }}>
+              Lorem ipsum asdg asfg ik k;j ;la wr;lk ae;lrj
+            </CardText>
+            <CardActions>
+              <Button colored>Github</Button>
+              <Button colored>CodePen</Button>
+              <Button colored>Live Demo</Button>
+            </CardActions>
+            <CardMenu style={{ color: '#fff' }}>
+              <IconButton name='share' />
+            </CardMenu>
+          </Card>
+        </div>
+
       )
     } else if(this.state.activeTab === 1) {
       return (
         <div><h1>This is Angular</h1></div>
-      )
-    } else if (this.state.activeTab === 2) {
-      return (
-        <div><h1>This is Vue</h1></div>
       )
     } else{
       return (
@@ -44,11 +86,10 @@ class Projects extends Component {
         <Tabs style={tabBarStyle} activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
           <Tab style={tabStyle}>React</Tab>
           <Tab style={tabStyle}>Angular</Tab>
-          <Tab style={tabStyle}>VueJS</Tab>
           <Tab style={tabStyle}>MongoDB</Tab>
         </Tabs>
 
-        <Grid className="projects-grid">
+        <Grid>
           <Cell col={12}>
             <div className="content">{this.toggleCategories()}</div>
           </Cell>
