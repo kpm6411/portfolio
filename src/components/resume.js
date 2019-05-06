@@ -12,9 +12,9 @@ class Resume extends Component {
           <Cell col={4} className="resume-left">
             <div style={{textAlign: 'center'}}>
               <img
-                src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
+                src="https://www.shareicon.net/download/2016/05/24/770078_man_512x512.png"
                 alt="avatar"
-                style={{height: '200px'}}
+                style={{height: '200px', marginBottom: '-3em'}}
               />
             </div>
             <h2 style={{paddingTop: '2em'}}>Kevin Manning</h2>

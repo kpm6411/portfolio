@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
 import { Grid, Cell, ProgressBar } from 'react-mdl';
 
+const barStyle = {
+  width: '60%',
+  marginTop: 'auto',
+  marginBottom: 'auto'
+}
+
 class Skills extends Component {
   render() {
     return(
       <Grid>
         <Cell col={12}>
           <div style={{display: 'flex', justifyContent: 'space-between', alignContent: 'center'}}>
-            <h5>{this.props.skill}</h5> <ProgressBar style={{width: '75%', marginTop: 'auto', marginBottom: 'auto'}} progress={this.props.progress}/>
+            <h4>{this.props.skill}</h4> <ProgressBar style={barStyle} progress={this.props.progress}/>
           </div>
         </Cell>
       </Grid>
