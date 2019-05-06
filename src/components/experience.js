@@ -20,7 +20,7 @@ class Experience extends Component {
           <ul>
             {list}
           </ul>
-          <hr/>
+          <hr className="resume-line"/>
         </Cell>
       </Grid>
     )

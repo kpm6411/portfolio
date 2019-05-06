@@ -77,6 +77,10 @@
   padding: 0 1em 1em 1em;
 }
 
+.resume-line {
+  margin-bottom: -0.25em;
+}
+
 .projects-grid {
   display: flex;
 }
