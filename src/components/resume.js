@@ -35,19 +35,19 @@ class Resume extends Component {
               startYear={2008}
               endYear={2012}
               schoolName="Vanderbilt University"
-              schoolDescription="Lorem Ipsum a fada dfh adfha fdha"
+              schoolDescription="Bachelor of Arts"
             />
             <Education
-              startYear={2008}
-              endYear={2012}
-              schoolName="Vanderbilt University"
-              schoolDescription="Lorem Ipsum a fada dfh adfha fdha"
+              startYear={2013}
+              endYear={2014}
+              schoolName="Indiana University"
+              schoolDescription="1-Year FLAS Graduate Fellowship"
             />
             <Education
-              startYear={2008}
-              endYear={2012}
-              schoolName="Vanderbilt University"
-              schoolDescription="Lorem Ipsum a fada dfh adfha fdha"
+              startYear={2015}
+              endYear={2017}
+              schoolName="Free Code Camp"
+              schoolDescription="Front End Development Certification"
             />
 
             <hr style={{borderTop: '3px solid #e22947'}}/>
@@ -56,34 +56,74 @@ class Resume extends Component {
               startYear={2017}
               endYear={2019}
               jobName="CrowdMed Inc."
-              jobDescription="Lorem Ipsum a fada dfh adfha fdha"
+              position="Quality Assurance Engineer"
+              desc1="Manual Testing - Testing and reporting functionality of website on both front end and back end."
+              desc2="Automated Testing - Designing and writing automated tests for website functionality using Selenium Webdriver."
+              desc3="Unit Testing - Some work writing and optimizing unit tests within the core website code."
+              desc4="Bugfixing - Some work identifying, analyzing, and correcting errors within the core website code."
             />
             <Experience
-              startYear={2017}
-              endYear={2019}
-              jobName="CrowdMed Inc."
-              jobDescription="Lorem Ipsum a fada dfh adfha fdha"
+              startYear={2014}
+              endYear={2018}
+              jobName="Southern Printing & Graphics"
+              position="Screen Printing Specialist"
+              desc1="Substrate, screen, ink, reclaim, and set-up knowledge."
+              desc2="Precise registration techniques with both single and multicolor screen printing."
+              desc3="Complete understanding of mesh counts, coating, and exposure."
+              desc4="Check printed items during production run for quality, making corrective adjustments as needed."
             />
             <Experience
-              startYear={2017}
-              endYear={2019}
-              jobName="CrowdMed Inc."
-              jobDescription="Lorem Ipsum a fada dfh adfha fdha"
+              startYear={2013}
+              endYear={2013}
+              jobName="Hunter Museum of American Art"
+              position="Curatorial Intern"
+              desc1="Organized and executed large scale projects in deaccession, provenance, and copyright acquisition."
+              desc2="Performed extensive archival work, both physical and digital."
+              desc3="Provided general assistance to museum curators."
+            />
+
+            <Experience
+              startYear={2012}
+              endYear={2013}
+              jobName="TecStyle"
+              position="Art Management"
+              desc1="Produced and sold printed phone cases for an online Etsy shop."
+              desc2="Researched and managed files used for production."
             />
 
             <hr style={{borderTop: '3px solid #e22947'}}/>
             <h2>Skills</h2>
             <Skills
-              skill="JavaScript"
-              progress={66}
+              skill="HTML/CSS"
+              progress={100}
             />
             <Skills
               skill="JavaScript"
-              progress={66}
+              progress={100}
             />
             <Skills
-              skill="JavaScript"
-              progress={66}
+              skill="React"
+              progress={90}
+            />
+            <Skills
+              skill="Selenium"
+              progress={80}
+            />
+            <Skills
+              skill="NodeJS"
+              progress={60}
+            />
+            <Skills
+              skill="MongoDB"
+              progress={60}
+            />
+            <Skills
+              skill="C#/.NET"
+              progress={30}
+            />
+            <Skills
+              skill="Ruby"
+              progress={10}
             />
           </Cell>
         </Grid>
