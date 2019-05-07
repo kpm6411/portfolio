@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Tab, Tabs, Grid, Cell, Card, CardTitle, CardActions, Button, CardMenu, CardText, IconButton } from 'react-mdl';
+import { Tab, Tabs, Grid, Cell } from 'react-mdl';
+import ProjectCard from './projectCard';
 
 const tabBarStyle = {
   backgroundColor: "white",
@@ -22,50 +23,31 @@ class Projects extends Component {
     if(this.state.activeTab === 0){
       return (
         <div className="projects-grid">
-          <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-            <CardTitle style={{ color: '#fff', height: '176px', background: 'red' }}>React Project #1</CardTitle>
-            <CardText style={{ borderBottom: '1px solid #ccc' }}>
-              Lorem ipsum asdg asfg ik k;j ;la wr;lk ae;lrj
-            </CardText>
-            <CardActions>
-              <Button colored>Github</Button>
-              <Button colored>CodePen</Button>
-              <Button colored>Live Demo</Button>
-            </CardActions>
-            <CardMenu style={{ color: '#fff' }}>
-              <IconButton name='share' />
-            </CardMenu>
-          </Card>
+          <ProjectCard
+            title="Portfolio"
+            background="https://www.shareicon.net/download/2016/05/24/769984_man_512x512.png"
+            text="The portfolio site you are currently viewing."
+            github="https://www.github.com/kpm6411/portfolio"
+            demo="http://www.kevinmanning.net"
+          />
 
-          <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-            <CardTitle style={{ color: '#fff', height: '176px', background: 'green' }}>React Project #2</CardTitle>
-            <CardText style={{ borderBottom: '1px solid #ccc' }}>
-              Lorem ipsum asdg asfg ik k;j ;la wr;lk ae;lrj
-            </CardText>
-            <CardActions>
-              <Button colored>Github</Button>
-              <Button colored>CodePen</Button>
-              <Button colored>Live Demo</Button>
-            </CardActions>
-            <CardMenu style={{ color: '#fff' }}>
-              <IconButton name='share' />
-            </CardMenu>
-          </Card>
+          <ProjectCard
+            title="Wrappr"
+            background="http://wrappr.herokuapp.com/static/media/Solstice.428ba1f6.png"
+            text="Web app for previewing vinyl car wrap colors."
+            github="https://www.github.com/kpm6411/wrappr"
+            codepen=""
+            demo="http://wrappr.herokuapp.com/"
+          />
 
-          <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-            <CardTitle style={{ color: '#fff', height: '176px', background: 'blue' }}>React Project #3</CardTitle>
-            <CardText style={{ borderBottom: '1px solid #ccc' }}>
-              Lorem ipsum asdg asfg ik k;j ;la wr;lk ae;lrj
-            </CardText>
-            <CardActions>
-              <Button colored>Github</Button>
-              <Button colored>CodePen</Button>
-              <Button colored>Live Demo</Button>
-            </CardActions>
-            <CardMenu style={{ color: '#fff' }}>
-              <IconButton name='share' />
-            </CardMenu>
-          </Card>
+          <ProjectCard
+            title="Nutricalc"
+            background="blue"
+            text="Web app for calculating nutrition information."
+            github="https://www.github.com/kpm6411/nutricalc"
+            codepen=""
+            demo="http://nutricalc.herokuapp.com/"
+          />
         </div>
 
       )
