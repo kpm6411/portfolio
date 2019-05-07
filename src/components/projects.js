@@ -22,7 +22,7 @@ class Projects extends Component {
   toggleCategories() {
     if(this.state.activeTab === 0){
       return (
-        <div className="projects-grid">
+        <Grid className="projects-grid">
           <ProjectCard
             title="Portfolio"
             background="https://www.shareicon.net/download/2016/05/24/769984_man_512x512.png"
@@ -36,7 +36,6 @@ class Projects extends Component {
             background="http://wrappr.herokuapp.com/static/media/Solstice.428ba1f6.png"
             text="Web app for previewing vinyl car wrap colors."
             github="https://www.github.com/kpm6411/wrappr"
-            codepen=""
             demo="http://wrappr.herokuapp.com/"
           />
 
@@ -48,7 +47,7 @@ class Projects extends Component {
             codepen=""
             demo="http://nutricalc.herokuapp.com/"
           />
-        </div>
+        </Grid>
 
       )
     } else if(this.state.activeTab === 1) {

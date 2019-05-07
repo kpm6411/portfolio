@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardTitle, CardActions, Button, CardMenu, CardText, IconButton } from 'react-mdl';
+import { Cell, Card, CardTitle, CardActions, Button, CardMenu, CardText, IconButton } from 'react-mdl';
 
 class ProjectCard extends Component{
   render() {
@@ -31,20 +31,22 @@ class ProjectCard extends Component{
       ) : cardButtons.push();
 
     return(
-      <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-        <CardTitle style={titleStyle}>
-          {this.props.title}
-        </CardTitle>
-        <CardText style={{ borderBottom: '1px solid #ccc' }}>
-          {this.props.text}
-        </CardText>
-        <CardActions>
-          {cardButtons}
-        </CardActions>
-        <CardMenu style={{ color: '#fff' }}>
-          <IconButton name='share' />
-        </CardMenu>
-      </Card>
+      <Cell col={4} tablet={12} phone={12}>
+        <Card shadow={5} style={{ minWidth: '350px', margin: 'auto'}}>
+          <CardTitle style={titleStyle}>
+            {this.props.title}
+          </CardTitle>
+          <CardText style={{ borderBottom: '1px solid #ccc' }}>
+            {this.props.text}
+          </CardText>
+          <CardActions>
+            {cardButtons}
+          </CardActions>
+          <CardMenu style={{ color: '#fff' }}>
+            <IconButton name='share' />
+          </CardMenu>
+        </Card>
+      </Cell>
     )
   }
 }
