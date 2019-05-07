@@ -26,6 +26,11 @@ class ProjectCard extends Component{
       ) : cardButtons.push();
     this.props.demo ? cardButtons.push(
         <a href={this.props.demo} rel="noopener noreferrer" target="_blank">
+          <Button colored>Demo</Button>
+        </a>
+      ) : cardButtons.push();
+    this.props.live ? cardButtons.push(
+        <a href={this.props.live} rel="noopener noreferrer" target="_blank">
           <Button colored>Live Site</Button>
         </a>
       ) : cardButtons.push();
