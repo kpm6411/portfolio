@@ -10,22 +10,21 @@ const aboutMe = "";
 
 class Resume extends Component {
   render() {
-    let aboutMeSection = [];
-    aboutMe ? aboutMeSection.push(
+    let aboutSection = [];
+    aboutMe ? aboutSection.push(
       <div>
         <p>{aboutMe}</p>
         <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
       </div>
-    ) : aboutMeSection.push();
+    ) : aboutSection.push();
 
-    let emailSection = [];
-    email ? emailSection.push(
+    email ? aboutSection.push(
       <div>
         <h5>Email</h5>
         <p>{email}</p>
         <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
       </div>
-    ) : emailSection.push();
+    ) : aboutSection.push();
 
     return(
       <div className="resume-grid">
@@ -41,8 +40,7 @@ class Resume extends Component {
             <h2 style={{paddingTop: '2em'}}>Kevin Manning</h2>
             <h4 style={{color: 'grey'}}>Programmer</h4>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
-            {aboutMeSection}
-            {emailSection}
+            {aboutSection}
           </Cell>
 
           <Cell col={8} className="resume-right">
@@ -53,12 +51,14 @@ class Resume extends Component {
               schoolName="Vanderbilt University"
               schoolDescription="Bachelor of Arts"
             />
+
             <Education
               startYear={2013}
               endYear={2014}
               schoolName="Indiana University"
               schoolDescription="1-Year FLAS Graduate Fellowship"
             />
+
             <Education
               startYear={2015}
               endYear={2017}
@@ -79,6 +79,7 @@ class Resume extends Component {
               desc3="Unit Testing - Some work writing and optimizing unit tests within the core website code."
               desc4="Bugfixing - Some work identifying, analyzing, and correcting errors within the core website code."
             />
+
             <Experience
               startYear={2014}
               endYear={2018}
@@ -89,6 +90,7 @@ class Resume extends Component {
               desc3="Complete understanding of mesh counts, coating, and exposure."
               desc4="Check printed items during production run for quality, making corrective adjustments as needed."
             />
+
             <Experience
               startYear={2013}
               endYear={2013}
@@ -98,6 +100,7 @@ class Resume extends Component {
               desc2="Performed extensive archival work, both physical and digital."
               desc3="Provided general assistance to museum curators."
             />
+
             <Experience
               startYear={2012}
               endYear={2013}

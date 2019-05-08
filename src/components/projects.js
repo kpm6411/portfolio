@@ -34,7 +34,7 @@ class Projects extends Component {
           <ProjectCard
             title="Wrappr"
             background="http://wrappr.herokuapp.com/static/media/Solstice.428ba1f6.png"
-            text="Web app for previewing vinyl car wrap colors."
+            text="React web app for previewing car wrap colors."
             github="https://www.github.com/kpm6411/wrappr"
             live="http://wrappr.herokuapp.com/"
           />
@@ -42,10 +42,28 @@ class Projects extends Component {
           <ProjectCard
             title="Nutricalc"
             background="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.-fEFnRvRIldl4embNrrewwHaE8%26pid%3DApi&f=1"
-            text="Web app for calculating nutrition information."
+            text="React web app for calculating caloric needs."
             github="https://www.github.com/kpm6411/nutricalc"
             codepen=""
             live="http://nutricalc.herokuapp.com/"
+          />
+
+          <ProjectCard
+            title="Minidex"
+            background="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fpa1.narvii.com%2F5744%2F4e0161f94017b5ea55795e72eb1031fa017f2854_hq.gif&f=1"
+            text="React based Pokedex app."
+            github="https://www.github.com/kpm6411/minidex"
+            codepen=""
+            live="http://mindex.herokuapp.com/"
+          />
+
+          <ProjectCard
+            title="Mininome"
+            background="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.agilemarketing.net%2Fwp-content%2Fuploads%2F2016%2F10%2FMetronome_2-12.jpg&f=1"
+            text="A simple React metronome."
+            github="https://www.github.com/kpm6411/metronome"
+            codepen=""
+            live="http://mininome.herokuapp.com/"
           />
 
           <ProjectCard
