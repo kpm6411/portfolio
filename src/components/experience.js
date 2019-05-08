@@ -9,6 +9,9 @@ class Experience extends Component {
     this.props.desc3 ? list.push(<li><p>{this.props.desc3}</p></li>) : list.push();
     this.props.desc4 ? list.push(<li><p>{this.props.desc4}</p></li>) : list.push();
 
+    let line = [];
+    this.props.last === true ? line.push() : line.push(<hr className="resume-line"/>);
+
     return(
       <Grid>
         <Cell col={4}>
@@ -20,7 +23,7 @@ class Experience extends Component {
           <ul>
             {list}
           </ul>
-          <hr className="resume-line"/>
+          {line}
         </Cell>
       </Grid>
     )

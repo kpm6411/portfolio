@@ -48,6 +48,7 @@ class Resume extends Component {
               endYear={2017}
               schoolName="Free Code Camp"
               schoolDescription="Front End Development Certification"
+              last={true}
             />
 
             <hr style={{borderTop: '3px solid #e22947'}}/>
@@ -81,7 +82,6 @@ class Resume extends Component {
               desc2="Performed extensive archival work, both physical and digital."
               desc3="Provided general assistance to museum curators."
             />
-
             <Experience
               startYear={2012}
               endYear={2013}
@@ -89,6 +89,7 @@ class Resume extends Component {
               position="Art Management"
               desc1="Produced and sold printed phone cases for an online Etsy shop."
               desc2="Researched and managed files used for production."
+              last={true}
             />
 
             <hr style={{borderTop: '3px solid #e22947'}}/>
