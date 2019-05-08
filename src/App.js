@@ -9,11 +9,11 @@ function App() {
     <div className="App">
       <div className="demo-big-content">
         <Layout>
-            <Header transparent="true" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">Kevin Manning</Link>} scroll>
+            <Header transparent="true" title={<Link className="appHeader" to="/">Kevin Manning</Link>} scroll>
                 <Navigation>
-                    <Link to="/resume">Resume</Link>
-                    <Link to="/projects">Projects</Link>
-                    <Link to="/contact">Contact</Link>
+                    <Link style={{fontSize: '0.7em'}} to="/resume">Resume</Link>
+                    <Link style={{fontSize: '0.7em'}} to="/projects">Projects</Link>
+                    <Link style={{fontSize: '0.7em'}} to="/contact">Contact</Link>
                 </Navigation>
             </Header>
             <Drawer title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">Kevin Manning</Link>}>
