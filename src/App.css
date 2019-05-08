@@ -74,9 +74,6 @@
   text-align: left;
 }
 
-.resume-left {
-}
-
 .resume-right {
   background: #27221f;
   color: white;
@@ -85,9 +82,6 @@
 
 .resume-line {
   margin-bottom: -0.25em;
-}
-
-.projects-grid {
 }
 
 .contact-body {

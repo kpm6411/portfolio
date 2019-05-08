@@ -5,8 +5,8 @@ import Experience from './experience';
 import Skills from './skills';
 
 // Adding info to these variables creates sections on the left side of the resume page
-const email = "";
-const aboutMe = "";
+const email = "kevin@kevinmanning.net";
+const aboutMe = "A dedicated autodidact, focused on quick learning and adaptation to solve problems. Self-taught web/software developer and QA Engineer who makes effective use of his diverse academic background and detail-oriented mindset. Two years of self-directed training in Javascript frameworks, and several years experience in productivity-focused work environments that value independence and leadership.";
 
 class Resume extends Component {
   render() {
