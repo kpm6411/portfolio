@@ -13,7 +13,7 @@ class Education extends Component {
         </Cell>
         <Cell col={8}>
           <h4 style={{ marginTop: '0px' }}><b>{this.props.schoolName}</b></h4>
-          <h6>{this.props.schoolDescription}</h6>
+          <h5>{this.props.schoolDescription}</h5>
           {line}
         </Cell>
       </Grid>

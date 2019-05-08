@@ -4,8 +4,29 @@ import Education from './education';
 import Experience from './experience';
 import Skills from './skills';
 
+// Adding info to these variables creates sections on the left side of the resume page
+const email = "";
+const aboutMe = "";
+
 class Resume extends Component {
   render() {
+    let aboutMeSection = [];
+    aboutMe ? aboutMeSection.push(
+      <div>
+        <p>{aboutMe}</p>
+        <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
+      </div>
+    ) : aboutMeSection.push();
+
+    let emailSection = [];
+    email ? emailSection.push(
+      <div>
+        <h5>Email</h5>
+        <p>{email}</p>
+        <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
+      </div>
+    ) : emailSection.push();
+
     return(
       <div className="resume-grid">
         <Grid>
@@ -20,13 +41,8 @@ class Resume extends Component {
             <h2 style={{paddingTop: '2em'}}>Kevin Manning</h2>
             <h4 style={{color: 'grey'}}>Programmer</h4>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
-            <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
-            <h5>Email</h5>
-            <p>someone@example.com</p>
-            <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
+            {aboutMeSection}
+            {emailSection}
           </Cell>
 
           <Cell col={8} className="resume-right">
