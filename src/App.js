@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
+import { Layout, Header, Navigation, Drawer, Content, Footer, FooterSection, FooterLinkList } from 'react-mdl';
 import './App.css';
 import { Link } from 'react-router-dom';
 import Main from './components/main';
@@ -26,6 +26,16 @@ function App() {
             <Content className='content'>
                 <Main/>
             </Content>
+            <Footer size="mini">
+              <FooterSection style={{ fontSize: '0.65em' }} logo="Kevin Manning">
+                  <FooterLinkList>
+                    <a href="/">Home</a>
+                    <a href="/resume">Resume</a>
+                    <a href="/projects">Projects</a>
+                    <a href="/contact">Contact</a>
+                  </FooterLinkList>
+              </FooterSection>
+          </Footer>
         </Layout>
     </div>
     </div>
