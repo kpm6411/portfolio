@@ -5,13 +5,13 @@ class Contact extends Component {
   render() {
     return(
       <div className='contact-body'>
-        <Grid className='contact-grid'>
+        <Grid className='contact-grid' style={{ marginTop: '20px', paddingBottom: '1.25em' }}>
           <Cell col={4}>
             <h3>Kevin Manning</h3>
             <img
-              src="https://www.shareicon.net/download/2016/05/24/769984_man_512x512.png"
-              alt="avatar"
-              style={{ height: '250px' }}
+              src="https://images2.imgbox.com/7e/90/UjASfM57_o.jpg"
+              alt="portrait"
+              style={{ height: '8em' }}
             />
           </Cell>
           <Cell col={8}>

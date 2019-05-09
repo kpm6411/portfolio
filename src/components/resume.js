@@ -6,7 +6,7 @@ import Skills from './skills';
 
 // Adding info to these variables creates sections on the left side of the resume page
 const email = "kevin@kevinmanning.net";
-const aboutMe = "A dedicated autodidact, focused on quick learning and adaptation to solve problems. Self-taught web/software developer and QA Engineer who makes effective use of his diverse academic background and detail-oriented mindset. Two years of self-directed training in Javascript frameworks, and several years experience in productivity-focused work environments that value independence and leadership.";
+const aboutMe = "A dedicated autodidact, focused on quick learning and adaptation to solve problems. Self-taught web/software developer and QA Engineer who makes effective use of his diverse academic background and detail-oriented mindset. Two years of self-directed training in Javascript frameworks, and several years experience in productivity-focused work environments that value independence and leadership, including two years of 100% remote work.";
 
 class Resume extends Component {
   render() {
@@ -73,7 +73,7 @@ class Resume extends Component {
               startYear={2017}
               endYear={2019}
               jobName="CrowdMed Inc."
-              position="Quality Assurance Engineer"
+              position="Quality Assurance Engineer (Remote)"
               desc1="Manual Testing - Testing and reporting functionality of website on both front end and back end."
               desc2="Automated Testing - Designing and writing automated tests for website functionality using Selenium Webdriver."
               desc3="Unit Testing - Some work writing and optimizing unit tests within the core website code."
