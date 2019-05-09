@@ -15,6 +15,10 @@
   font-size: 1.5em;
 }
 
+.appFooter {
+  font-size: 0.65em;
+}
+
 .content {
   text-align: center;
   display: flex;
@@ -122,6 +126,10 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .appFooter {
+    font-size: 1em;
+  }
+
   .social-links i {
     font-size: 2em;
   }

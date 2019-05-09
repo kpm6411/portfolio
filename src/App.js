@@ -27,7 +27,7 @@ function App() {
                 <Main/>
             </Content>
             <Footer size="mini">
-              <FooterSection style={{ fontSize: '0.65em' }} logo="Kevin Manning">
+              <FooterSection className="appFooter" logo="Kevin Manning">
                   <FooterLinkList>
                     <a href="/">Home</a>
                     <a href="/resume">Resume</a>
