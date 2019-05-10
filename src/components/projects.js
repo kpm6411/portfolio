@@ -54,7 +54,7 @@ class Projects extends Component {
             text="React based Pokedex app."
             github="https://www.github.com/kpm6411/minidex"
             codepen=""
-            live="http://mindex.herokuapp.com/"
+            live="http://minidex.herokuapp.com/"
           />
 
           <ProjectCard
