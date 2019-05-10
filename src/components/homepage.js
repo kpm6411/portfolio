@@ -25,7 +25,7 @@ class Homepage extends Component {
                 </a>
 
                 {/* FreeCodeCamp */}
-                <a href="https://medium.freecodecamp.org/" rel="noopener noreferrer" target="_blank">
+                <a href="https://www.freecodecamp.org/certification/kpm6411/legacy-front-end" rel="noopener noreferrer" target="_blank">
                   <i className="fa fa-free-code-camp" aria-hidden="true" />
                 </a>
 

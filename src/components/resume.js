@@ -32,7 +32,7 @@ class Resume extends Component {
           <Cell col={4} className="resume-left">
             <div style={{textAlign: 'center'}}>
               <img
-                src="https://www.shareicon.net/download/2016/05/24/770078_man_512x512.png"
+                src="https://images2.imgbox.com/7e/90/UjASfM57_o.jpg"
                 alt="avatar"
                 style={{height: '200px', marginBottom: '-3em'}}
               />
@@ -63,7 +63,12 @@ class Resume extends Component {
               startYear={2015}
               endYear={2017}
               schoolName="Free Code Camp"
-              schoolDescription="Front End Development Certification"
+              schoolDescription={
+                [
+                  <a href="https://www.freecodecamp.org/certification/kpm6411/legacy-front-end" rel="noopener noreferrer" target="_blank">Front End Development Certification</a>,
+                  <br/>, <br/>,
+                  <a href="https://www.freecodecamp.org/certification/kpm6411/javascript-algorithms-and-data-structures" rel="noopener noreferrer" target="_blank">JavaScript Algorithms and Data Structures Certification</a>
+                ]}
               last={true}
             />
 

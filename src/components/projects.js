@@ -33,7 +33,7 @@ class Projects extends Component {
 
           <ProjectCard
             title="Wrappr"
-            background="http://wrappr.herokuapp.com/static/media/Solstice.428ba1f6.png"
+            background="https://images2.imgbox.com/98/36/KPPBHfJW_o.png"
             text="React web app for previewing car wrap colors."
             github="https://www.github.com/kpm6411/wrappr"
             live="http://wrappr.herokuapp.com/"

@@ -1,13 +1,12 @@
 import React from 'react';
 import { Layout, Header, Navigation, Drawer, Content, Footer, FooterSection, FooterLinkList } from 'react-mdl';
-import './App.css';
 import { Link } from 'react-router-dom';
 import Main from './components/main';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <div className="demo-big-content">
         <Layout>
             <Header transparent="true" title={<Link className="appHeader" to="/">Kevin Manning</Link>} scroll>
                 <Navigation>
@@ -37,7 +36,6 @@ function App() {
               </FooterSection>
           </Footer>
         </Layout>
-    </div>
     </div>
   );
 }
